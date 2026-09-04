@@ -100,3 +100,6 @@ orbit-reviewarea {
   cursor: pointer;
 }
 .payload .copy:hover { border-color: var(--link); }
+
+/* One book title, set as one. */
+.featured .title i { font-style: italic; }
