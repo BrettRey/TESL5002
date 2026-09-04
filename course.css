@@ -1,0 +1,68 @@
+/* TESL 5002 supplement to style-v3.css.
+   style-v3.css is copied verbatim from brettreynolds.ca and owns every token,
+   colour, and text rule. This file only covers element types the personal site
+   has no occasion to style: course images, embedded video, Orbit review
+   prompts, and lists inside .prose. Nothing here redeclares a v3 rule, so the
+   two sheets cannot collide on specificity the way v2 and v3 did. */
+
+/* Media may run to the full shell width, flush left, while prose stays at the
+   30rem measure. */
+.prose img,
+.prose svg,
+.prose video,
+.prose iframe {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: min(var(--shell), calc(100vw - 2.5rem));
+  margin: 1.4rem 0;
+}
+
+.prose iframe { width: min(var(--shell), calc(100vw - 2.5rem)); border: 1px solid var(--rule); }
+
+.prose a img { margin: 1.4rem 0; }
+
+/* Lists, following the .essay-content treatment on brettreynolds.ca. */
+.prose ul, .prose ol { margin: 1rem 0; padding-left: 1.5em; }
+.prose li { margin-bottom: 0.4rem; }
+.prose ul { list-style: none; }
+.prose ul > li { padding-left: 1em; text-indent: -1em; }
+.prose ul > li::before {
+  content: "\2013";
+  display: inline-block;
+  width: 1em;
+  color: var(--meta);
+}
+.prose ol { list-style: decimal; }
+
+/* Image credits. */
+.credit {
+  font-size: var(--t-meta);
+  color: var(--meta);
+  margin-top: -0.9rem;
+}
+
+/* Orbit spaced-repetition prompts. */
+orbit-reviewarea {
+  display: block;
+  margin: 1.8rem 0;
+  padding-left: 1.1rem;
+  border-left: 3px solid var(--rule);
+}
+
+/* Module lists on the contents page. */
+.works .sub { list-style: none; margin: 0.3rem 0 0; padding-left: 1.1rem; }
+.works .sub li { margin-bottom: 0.35rem; }
+.works .sub li::before { display: none; }
+.group {
+  display: block;
+  font-variant: small-caps;
+  letter-spacing: 0.07em;
+  font-size: var(--t-meta);
+  color: var(--meta);
+  margin-top: 0.9rem;
+}
+
+/* Colour alone is not a sufficient link signal (WCAG 1.4.1), matching the
+   rule brettreynolds.ca applies to its own list pages. */
+.works a, .back-link a, .credit a { text-decoration: underline; text-underline-offset: 0.14em; }
