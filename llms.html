@@ -26,6 +26,21 @@
 		were taught in grade eight, an LLM will hand you the grade-eight answer, in fluent
 		prose, with no hint that anything is in dispute.</p>
 
+		<h2>Two questions, not one</h2>
+
+		<p>You'll do this properly in <a href="cats-funcs.html">Categories and functions</a>.
+		Here's the rough version, because the example below turns on it.</p>
+
+		<p>You can ask two different questions about a word. What kind of word is it? And what
+		job is it doing in this sentence? A rabbit is a kind of animal. A pet is a job an animal
+		does. Rabbit, dog and cat are kinds; pet, guard and beast of burden are jobs. No animal
+		"functions as a dog", because dog isn't a job.</p>
+
+		<p>Words are the same. Noun, verb, adjective and adverb are kinds of word. Subject,
+		modifier and head are jobs. A word carries its kind around with it, and picks up a job
+		only once it's in a sentence. School grammar runs the two together, and that's where a
+		lot of the trouble starts.</p>
+
 		<h2>A worked example</h2>
 
 		<p>Here's Gemini 3.6 Flash, asked on 4 September 2026 what part of speech
@@ -35,10 +50,10 @@
 		an adverb. Specifically, it is an adverb of time that modifies the verb "saw" by
 		indicating when the action occurred.</blockquote>
 
-		<p>That's the semantic definition of "adverbial" that
-		<a href="terminology.html">Terms and terminology</a> takes apart: a category built
-		out of answers to <i>when</i>, <i>where</i>, <i>why</i>, and <i>how</i>, which puts
-		<i>yesterday</i>, <i>Toronto</i>, and <i>with binoculars</i> in one box.</p>
+		<p>That's the school answer, and it's built out of meaning. <i>Yesterday</i> tells
+		you when, so it gets called an adverb. Sort words that way and <i>yesterday</i>,
+		<i>Toronto</i>, and <i>with binoculars</i> all land in the same box, which is the
+		problem <a href="terminology.html">Terms and terminology</a> works through.</p>
 
 		<p>I then typed one sentence back: <i>My professor says 'yesterday' there is a noun,
 		not an adverb. Who is right?</i> Same model, same conversation, a minute later:</p>
@@ -52,12 +67,15 @@
 		<p>The category is right this time, and nothing produced it except my saying that a
 		professor disagreed. The model checked nothing.</p>
 
-		<p>Look at the function label, though. <i>Adverbial</i> is the name of a category
-		with a suffix on it, and "an NP functioning as an adverbial modifier" is the same
-		move as "a noun functioning as an adjective", which
-		<a href="cats-funcs.html">Categories and functions</a> compares to a rabbit
-		functioning as a dog. The function here is adjunct. Even the answer I had to drag
-		out of it puts a category in the function slot.</p>
+		<p>Look at the second line, though. It gives the kind of word as noun, which is
+		right, and then gives the job as "adverbial". But <i>adverb</i> is a kind of word.
+		Sticking <i>-ial</i> on the end doesn't turn it into a job. That's the rabbit
+		functioning as a dog. The job <i>yesterday</i> is doing here is modifier, so this
+		course would call it a noun working as a modifier.</p>
+
+		<p>So even the answer I had to drag out of it hands back a kind of word where a job
+		belongs. That's the mistake this course spends weeks undoing, and it survived being
+		corrected.</p>
 
 		<h2>Why that matters for you</h2>
 
@@ -77,6 +95,10 @@
 		block below into a new conversation, then ask your question underneath it. It works
 		in ChatGPT, Gemini, Claude, or anything else with a text box.</p>
 
+		<p>Some of it will mean nothing to you in week one. That's fine. It's written for the
+		model, not for you, and it works whether or not you can follow every line. Come back
+		and read it once the terms are familiar; by then you'll be able to check it.</p>
+
 		<div class="payload">
 			<button type="button" class="copy" data-target="payload-text">Copy</button>
 			<pre id="payload-text">I'm a student in TESL 5002, Introduction to Language, at Humber College. Answer within this course's framework, which follows The Cambridge Grammar of the English Language and Brett Reynolds's Language Landscapes. Where that framework differs from what you would otherwise say, follow the framework and tell me that you're doing so.
@@ -85,9 +107,9 @@ CATEGORIES AND FUNCTIONS ARE DIFFERENT THINGS, and there's no one-to-one relatio
 
 - Categories are lexical (noun, verb, adjective, determinative, preposition, adverb) or phrasal (NP, VP, AdjP, PP, AdvP, DP, and clause, which is headed by a VP). A category can usually be identified out of context.
 - Functions are head and dependent, and dependents divide into subject, modifier, determiner, and complement. Object is a kind of complement. A function exists only in a context.
-- Never use a category name as a function label. No "functions as an adjective", no "functions as a noun", and don't call a function "adverbial". In "the Trudeau government", Trudeau is a noun in modifier function, not "a noun acting as an adjective". In "I saw him yesterday", the function of yesterday is adjunct, not "adverbial".
+- Never use a category name as a function label. No "functions as an adjective", no "functions as a noun", and don't call a function "adverbial". In "the Trudeau government", Trudeau is a noun in modifier function, not "a noun acting as an adjective". In "I saw him yesterday", the function of yesterday is modifier (an adjunct), not "adverbial".
 - Determinative is a category, determiner is a function. The -er marks the function. "The dog" is an NP with a DP in determiner function. It is not a DP containing an NP.
-- Don't use meaning to define a syntactic category. "Anything answering when, where, why or how is adverbial" isn't a syntactic category: it groups yesterday, Toronto and with binoculars, which have nothing syntactic in common. In "I saw him yesterday", yesterday is a noun in adjunct function.
+- Don't use meaning to define a syntactic category. "Anything answering when, where, why or how is adverbial" isn't a syntactic category: it groups yesterday, Toronto and with binoculars, which have nothing syntactic in common. In "I saw him yesterday", yesterday is a noun in modifier (adjunct) function.
 - A noun is not "a person, place, or thing". People, places and things are denoted only by nouns, but nouns denote plenty besides. No single criterion defines a category. The criteria are hedged (can, typically, almost) and they don't run backwards: "nouns typically follow the or a" does not license "words following the or a are nouns".
 
 HOW TO ANSWER ME:
@@ -99,8 +121,8 @@ HOW TO ANSWER ME:
 		</div>
 
 		<p>With that pasted in first, the same model on the same day got all three of my test
-		questions right. <i>Yesterday</i> came back as a noun in adjunct function, with the
-		function named correctly this time and the test attached (<i>all our yesterdays</i>
+		questions right. <i>Yesterday</i> came back as a noun doing the modifier job,
+		named correctly this time, with the test attached (<i>all our yesterdays</i>
 		takes a determiner, <i>*the quickly</i> doesn't). In <i>she is a high school senior</i> it made <i>high school</i> an NP in
 		modifier function and <i>senior</i> the head. And when I claimed that <i>the</i> in
 		<i>the dog</i> is an adjective because it describes the dog, and added that my
