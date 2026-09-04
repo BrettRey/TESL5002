@@ -66,3 +66,37 @@ orbit-reviewarea {
 /* Colour alone is not a sufficient link signal (WCAG 1.4.1), matching the
    rule brettreynolds.ca applies to its own list pages. */
 .works a, .back-link a, .credit a { text-decoration: underline; text-underline-offset: 0.14em; }
+
+/* Pasteable prompt block. */
+.payload {
+  position: relative;
+  margin: 1.4rem 0;
+  padding: 1.1rem 1.1rem 0.6rem;
+  border-left: 3px solid var(--link);
+  background: color-mix(in srgb, var(--link) 4%, transparent);
+  max-width: min(var(--shell), calc(100vw - 2.5rem));
+}
+.payload pre {
+  white-space: pre-wrap;
+  font-family: 'Inconsolata', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 0 0 0.8rem;
+  max-height: 21rem;
+  overflow-y: auto;
+}
+.payload .copy {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  font: var(--t-meta)/1 'EB Garamond', Georgia, serif;
+  font-variant: small-caps;
+  letter-spacing: 0.07em;
+  padding: 0.3rem 0.7rem;
+  color: var(--link);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.payload .copy:hover { border-color: var(--link); }

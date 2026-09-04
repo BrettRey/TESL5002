@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Where large language models are least reliable on the topics of TESL 5002, and a prompt to paste in first.">
+    <title>Using LLMs in this course - TESL 5002</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="style-v3.css">
+    <link rel="stylesheet" href="course.css">
+	</head>
+	<body>
+<div class="prose">
+		<h1>Using LLMs in this course</h1>
+		<p><a href="index.html">&larr; Course contents</a></p>
+
+		<p>Nobody's asking you to avoid large language models (LLMs) like ChatGPT, Gemini,
+		and Claude. They're useful, they're not going away, and you'll meet them again in
+		your teaching career. But this course is one of the places where they're least
+		dependable, and they're undependable in a way that's hard to spot from the outside.
+		There's a fix at the bottom of this page. First, the problem.</p>
+
+		<p>An LLM reproduces what's most common in what it has read, and what's most common
+		about English grammar is school grammar. A good deal of this course is about where
+		school grammar goes wrong. So on the exact points where we part company with what you
+		were taught in grade eight, an LLM will hand you the grade-eight answer, in fluent
+		prose, with no hint that anything is in dispute.</p>
+
+		<h2>A worked example</h2>
+
+		<p>Here's Gemini 3.6 Flash, asked on 4 September 2026 what part of speech
+		<i>yesterday</i> is in <i>I saw him yesterday</i>:</p>
+
+		<blockquote>In the sentence "I saw him yesterday," the word "yesterday" functions as
+		an adverb. Specifically, it is an adverb of time that modifies the verb "saw" by
+		indicating when the action occurred.</blockquote>
+
+		<p>That's the semantic definition of "adverbial" that
+		<a href="terminology.html">Terms and terminology</a> takes apart: a category built
+		out of answers to <i>when</i>, <i>where</i>, <i>why</i>, and <i>how</i>, which puts
+		<i>yesterday</i>, <i>Toronto</i>, and <i>with binoculars</i> in one box.</p>
+
+		<p>I then typed one sentence back: <i>My professor says 'yesterday' there is a noun,
+		not an adverb. Who is right?</i> Same model, same conversation, a minute later:</p>
+
+		<blockquote>Word Class (Part of Speech): Noun<br>
+		Syntactic Function: Adverbial / Temporal Adjunct (an NP functioning as an adverbial
+		modifier)<br>
+		So your professor is making an important distinction between a word's part of speech
+		and its syntactic function in a sentence!</blockquote>
+
+		<p>The category is right this time, and nothing produced it except my saying that a
+		professor disagreed. The model checked nothing.</p>
+
+		<p>Look at the function label, though. <i>Adverbial</i> is the name of a category
+		with a suffix on it, and "an NP functioning as an adverbial modifier" is the same
+		move as "a noun functioning as an adjective", which
+		<a href="cats-funcs.html">Categories and functions</a> compares to a rabbit
+		functioning as a dog. The function here is adjunct. Even the answer I had to drag
+		out of it puts a category in the function slot.</p>
+
+		<h2>Why that matters for you</h2>
+
+		<p>It switched because I invoked a professor. Tell it your own answer and ask whether
+		you're right, and it will often find reasons you're right instead. It's tracking what
+		you seem to want, not what's true, and it sounds equally sure either way.</p>
+
+		<p>Which gives you a rough rule. An LLM helps most when you can already check the
+		answer, and helps least when you can't. If you know enough to catch the mistake,
+		you'll catch it. If you're asking because you don't know, nothing in the reply tells
+		you which of those two answers you just got.</p>
+
+		<h2>Paste this in first</h2>
+
+		<p>The right analysis was in there. It just wasn't the one that came out by default.
+		So tell the model which framework you're working in before you ask anything. Copy the
+		block below into a new conversation, then ask your question underneath it. It works
+		in ChatGPT, Gemini, Claude, or anything else with a text box.</p>
+
+		<div class="payload">
+			<button type="button" class="copy" data-target="payload-text">Copy</button>
+			<pre id="payload-text">I'm a student in TESL 5002, Introduction to Language, at Humber College. Answer within this course's framework, which follows The Cambridge Grammar of the English Language and Brett Reynolds's Language Landscapes. Where that framework differs from what you would otherwise say, follow the framework and tell me that you're doing so.
+
+CATEGORIES AND FUNCTIONS ARE DIFFERENT THINGS, and there's no one-to-one relationship between them.
+
+- Categories are lexical (noun, verb, adjective, determinative, preposition, adverb) or phrasal (NP, VP, AdjP, PP, AdvP, DP, and clause, which is headed by a VP). A category can usually be identified out of context.
+- Functions are head and dependent, and dependents divide into subject, modifier, determiner, and complement. Object is a kind of complement. A function exists only in a context.
+- Never use a category name as a function label. No "functions as an adjective", no "functions as a noun", and don't call a function "adverbial". In "the Trudeau government", Trudeau is a noun in modifier function, not "a noun acting as an adjective". In "I saw him yesterday", the function of yesterday is adjunct, not "adverbial".
+- Determinative is a category, determiner is a function. The -er marks the function. "The dog" is an NP with a DP in determiner function. It is not a DP containing an NP.
+- Don't use meaning to define a syntactic category. "Anything answering when, where, why or how is adverbial" isn't a syntactic category: it groups yesterday, Toronto and with binoculars, which have nothing syntactic in common. In "I saw him yesterday", yesterday is a noun in adjunct function.
+- A noun is not "a person, place, or thing". People, places and things are denoted only by nouns, but nouns denote plenty besides. No single criterion defines a category. The criteria are hedged (can, typically, almost) and they don't run backwards: "nouns typically follow the or a" does not license "words following the or a are nouns".
+
+HOW TO ANSWER ME:
+
+- Don't agree with me because I sound confident or because I say my professor said so. If I contradict the framework above, tell me I'm wrong and why.
+- If you're unsure, say so instead of giving the most common answer.
+- Give me the test, not just the verdict: tell me what to check.
+- Keep it short.</pre>
+		</div>
+
+		<p>With that pasted in first, the same model on the same day got all three of my test
+		questions right. <i>Yesterday</i> came back as a noun in adjunct function, with the
+		function named correctly this time and the test attached (<i>all our yesterdays</i>
+		takes a determiner, <i>*the quickly</i> doesn't). In <i>she is a high school senior</i> it made <i>high school</i> an NP in
+		modifier function and <i>senior</i> the head. And when I claimed that <i>the</i> in
+		<i>the dog</i> is an adjective because it describes the dog, and added that my
+		professor agreed, it told me we don't define categories by meaning and that
+		<i>the</i> is a determinative in determiner function.</p>
+
+		<p>Don't mistake that for reliability. It removes a class of errors this course cares
+		about; it doesn't make the thing trustworthy, and it can still be confidently wrong
+		about something the block doesn't cover. Keep checking the answers against the
+		readings.</p>
+
+		<h2>Something to try</h2>
+
+		<p>After you've written your own answer in one of the "Try explaining these concepts"
+		boxes, put the same question to an LLM, once cold and once with the block above.
+		Compare all three answers against the criteria in the reading and find where they
+		disagree. Work out which is wrong and what test would settle it. You'll learn more
+		from the disagreement than from any of the answers on its own, and you'll be doing
+		what you'll need to do every time one of these things tells you something about
+		English.</p>
+
+		<p class="back-link"><a href="index.html">&larr; Course contents</a></p>
+</div>
+<script>
+document.querySelectorAll('.payload .copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = document.getElementById(b.dataset.target).textContent;
+    navigator.clipboard.writeText(t).then(function () {
+      b.textContent = 'Copied';
+      setTimeout(function () { b.textContent = 'Copy'; }, 2000);
+    }, function () { b.textContent = 'Select and copy'; });
+  });
+});
+</script>
+	</body>
+</html>
