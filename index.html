@@ -1,58 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TESL 5002 &#183; Introduction to Language</title>
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="https://js.withorbit.com/orbit-web-component.js"></script>
   </head>
   <body>
-    <h1>TESL 5002: Introduction to language</h1>
-    <h2>Humber College</h2>
-    <h2>Module 0</h2>
-    <img src="images/welcome.jpg" alt="Smiling person" width="450" height="130"> 
-    <ul>
-		 <li><a href="module0.html">Becoming a better learner</a></li>
-	</ul>
-    <h2>Module 1</h2>
-    <img src="images/bloom.png" alt="flowers"  width="450" height="130"> 
-    <ul>
-		<li><a href="module1.html">The language of language: Concepts & terms</a></li>
-		<li><a href="categories.html">Categories: What makes soup soup</a></li>
-		<li>Nouns, verbs, and adjectives</li>
-			<ul>
-				<li><a href="nouns.html">Nouns and noun phrases</a></li>
-				<li><a href="countability.html">Countability</a></li>
-			</ul>
-		<li>Verbs and verb phrases</li>
-		<ul>
-			<li><a href="verbs.html">Verbs and verb phrases</a></li>
-			<li><a href="tense.html">Tense and aspect</a></li>
-		</ul>
-		<li><a href="adjectives.html">Adjectives and AdjPs</a></li>
-		<li><a href="cats-funcs.html">Categories and functions</a></li>
-		<li><a href="prons-dets.html">Pronouns, and determinatives and DPs</a></li>
-		<li><a href="aux.html">Auxiliary verbs</a></li>
-		<li><a href="trees.html">Syntax trees</a></li>
-		<ul>
-			<li><a href="some_trees.html">Some trees</a></li>
-			<li><a href="terminology.html">Terms and terminology</a></li>
-		</ul>
-		<li><a href="summary.html">Summary of categories and functions</a></li>
-    </ul>
-    <h2>Module 2</h2>
-    <img src="images/ingredients.png" alt="ingredients" width="450" height="130"> 
-    <ul>
-    	<li><a href="vocabintro.html">Analyzing, explaining, and teaching vocabulary</a></li>
-    	<li><a href="morphology.html">Morphology</a></li>
-    	<li><a href="vocabsize.html">Vocabulary size and frequency</a></li>
-    	<!--<li><a href="vocabtools.html">Vocabulary tools</a></li>-->
-    	<li><a href="teaching.html">Teaching and learning vocabulary</a></li>
-	</ul>
-    <h2>Module 3</h2>
-    <img src="images/people.png" alt="Two people" > 
-    <ul>
-    	<li><a href="module3.html">Introduction</a></li> 
-    	<li><a href="standards.html">Standards and norms</a></li>    	
-	</ul>
-    <p style="padding-left:30px;">Copyright &copy;2020&#8211;2022 <a href="mailto:brett.reynolds@humber.ca">Brett
-        Reynolds</a> </p>
+    <header class="topbar">
+      <a class="code" href="index.html">TESL&#8202;5002</a>
+      <a href="#m1">Contents</a>
+    </header>
+
+    <main>
+      <div class="masthead">
+        <p class="code">Humber College &#183; Introduction to Language</p>
+        <h1>How English works, and how to explain it</h1>
+        <p class="lede">A course reader in four modules: how to learn, how sentences are built,
+          how words are learned and taught, and whose English gets to count as the standard.</p>
+        <p class="affil">Brett Reynolds &#183; Four modules &#183; Open access</p>
+      </div>
+
+      <a class="book" href="https://langsci-press.org/catalog/book/555">
+        <span class="label">Course text &#183; open access</span>
+        <span class="btitle">Language Landscapes</span>
+        <span class="bsub">The ESL teacher&#8217;s guide to how English works</span>
+        <span class="bmeta">Brett Reynolds &#183; Language Science Press, 2026 &#183; Free PDF &#8599;</span>
+      </a>
+
+      <section class="module" id="m0">
+        <header><span class="num">00</span><h2>Getting started</h2></header>
+        <img class="banner" src="images/welcome.jpg" alt="">
+        <ul class="toc">
+          <li><a href="module0.html">Becoming a better learner</a></li>
+        </ul>
+      </section>
+
+      <section class="module" id="m1">
+        <header><span class="num">01</span><h2>Grammar and structure</h2></header>
+        <img class="banner" src="images/bloom.png" alt="">
+        <ul class="toc">
+          <li><a href="module1.html">The language of language: concepts and terms</a></li>
+          <li><a href="categories.html">Categories: what makes soup soup</a></li>
+          <li class="group">Nouns</li>
+          <li><ul class="sub">
+            <li><a href="nouns.html">Nouns and noun phrases</a></li>
+            <li><a href="countability.html">Countability</a></li>
+          </ul></li>
+          <li class="group">Verbs</li>
+          <li><ul class="sub">
+            <li><a href="verbs.html">Verbs and verb phrases</a></li>
+            <li><a href="tense.html">Tense and aspect</a></li>
+            <li><a href="au.html">Auxiliary verbs</a></li>
+          </ul></li>
+          <li class="group">Everything else</li>
+          <li><ul class="sub">
+            <li><a href="adjectives.html">Adjectives and AdjPs</a></li>
+            <li><a href="prons-dets.html">Pronouns, determinatives, and DPs</a></li>
+          </ul></li>
+          <li class="group">Putting it together</li>
+          <li><ul class="sub">
+            <li><a href="cats-funcs.html">Categories and functions</a></li>
+            <li><a href="trees.html">Syntax trees</a></li>
+            <li><a href="some_trees.html">Some trees</a></li>
+            <li><a href="terminology.html">Terms and terminology</a></li>
+            <li><a href="summary.html">Summary of categories and functions</a></li>
+          </ul></li>
+        </ul>
+      </section>
+
+      <section class="module" id="m2">
+        <header><span class="num">02</span><h2>Vocabulary</h2></header>
+        <img class="banner" src="images/ingredients.png" alt="">
+        <ul class="toc">
+          <li><a href="vocabintro.html">Analyzing, explaining, and teaching vocabulary</a></li>
+          <li><a href="morphology.html">Morphology</a></li>
+          <li><a href="vocabsize.html">Vocabulary size and frequency</a></li>
+          <li><a href="teaching.html">Teaching and learning vocabulary</a></li>
+        </ul>
+      </section>
+
+      <section class="module" id="m3">
+        <header><span class="num">03</span><h2>Language in society</h2></header>
+        <img class="banner" src="images/people.png" alt="">
+        <ul class="toc">
+          <li><a href="module3.html">Introduction</a></li>
+          <li><a href="standards.html">Standards and norms</a></li>
+        </ul>
+      </section>
+
+      <p class="colophon">&copy; 2020&#8211;2022
+        <a href="mailto:brett.reynolds@humber.ca">Brett Reynolds</a>
+      </p>
+    </main>
   </body>
 </html>
